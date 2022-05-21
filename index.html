@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--HEAD-->
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>KC's W&uuml;nderLab</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+	</head>
+
+    <!--BODY-->
+	<body class="Background">
+		
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <!--BACKGROUND IMAGE-->
+        <div id="Home">
+            <img id="Typing_Video" src="./img/lemons.jpg" alt="">
+        </div>
+
+        <!--HOME TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">KC's W&uuml;nderLab</h1>
+            <p class="center"><strong>
+                    Welcome to W&uuml;nderLab HQ, where dreams become reality!
+                    <br><br>
+                    <q>Then out spake brave Horatius,
+                        <br>the Captain of the Gate:
+                        <br>To every man on this earth
+                        <br>death cometh soon or late.
+                        <br>And how can man die better
+                        <br>than facing fearful odds,
+                        <br>for the ashes of his fathers,
+                        <br>and the temples of his gods.
+                    <br></q><br>- Thomas Babington Macaulay,
+                    <br> Lays of Ancient Rome
+            </strong></p> 
+        </div>
+
+        <!--SLIDESHOW-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--SLIDE 1-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/14er.jpg" alt="">
+                        <div class="text">Let's take your online presense to new heights!</div>
+                    </div>
+                    <!--SLIDE 2-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/rzr.jpg" alt="">
+                        <div class="text">We'll have a great time along the way!</div>
+                    </div>
+                    <!--SLIDE 3-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/meme.jpg" alt="">
+                        <div class="text">Contact me to get the ball rolling!</div>
+                    </div>
+                    <!--PREV/NEXT-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <br>
+
+                <!--SLIDESHOW DOTS-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT-->
+        <div class="Row" id="About">
+            <!--LEFT COLUMN-->
+            <div class="Column_2">
+                <img src="./img/matrix.jpg" alt="">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>What's up world?! Name's Kevin, I'm a junior software developer coming to you live from the Rocky Mountains of Colorado.
+                    <br><br>I have a rich, high-level technical background in the automotive and aerospace industries; I'm no stranger to sticking to the job and getting it done right.
+                    <br><br>My programming abilities continue to grow daily, and I am currently skilled with HTML, CSS, JavaScript, and Swift.
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/kevlarsov" target="_blank">My Github</a></p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_2">
+                <a href="https://github.com/kevlarsov" target="_blank"><img src="./img/github.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT FORM-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/f/xrgjopgl" method="POST" class="form-container">
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name:</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="email"><b>Email:</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message:</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+
+        <!--FOOTER-->
+        <footer>
+            <p class="center">KC's W&uuml;nderLab</p>
+        </footer>
+
+        <script src="./js/main.js"></script>
+	</body>
+</html>
