@@ -358,6 +358,7 @@ footer > p {
     cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
     -webkit-animation: movePopup 2s; /* Animation for 5 seconds for Safari 4.0-8.0 */
     animation: movePopup 2s; /* Animation set for 5 seconds */
+    z-index: 1;
 }
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
