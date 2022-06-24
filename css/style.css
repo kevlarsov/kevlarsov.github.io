@@ -57,15 +57,15 @@ p:hover {
 	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
 }
 
-ul {
+/*ul {
     font-family: Perpetua, Rockwell Extra Bold;
-    font-size: 2vw; /* Relative font sizing equal to 2.5% of the viewport width */
+    font-size: 2vw;
 }
 
 ul:hover {
-    transition: transform 1s; /* This makes the transform effect last 1 second */
-	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
-}
+    transition: transform 1s;
+	transform: scale(1.01);
+}*/
 
 /* Center class - this applies to all centered text */
 .center {
