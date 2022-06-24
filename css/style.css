@@ -57,12 +57,12 @@ p:hover {
 	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
 }
 
-li {
+ul {
     font-family: Perpetua, Rockwell Extra Bold;
     font-size: 2vw; /* Relative font sizing equal to 2.5% of the viewport width */
 }
 
-li:hover {
+ul:hover {
     transition: transform 1s; /* This makes the transform effect last 1 second */
 	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
 }
